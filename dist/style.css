@@ -9,6 +9,9 @@ body {
 
 .left-hero {
    margin: 35px 0 35px 0;
+   box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+   -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+   -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
 }
 
 .left-hero,
@@ -16,15 +19,15 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   max-width: 600px;
+   max-width: 750px;
 }
 
 .picture-name {
    position: absolute;
-   top: 600px;
-   margin-left: 25px;
-   max-width: 600px;
-   font-size: 150px;
+   top: 800px;
+   padding: 0 0 0 25px;
+   max-width: 725px;
+   font-size: 170px;
    color: black;
 }
 
@@ -33,7 +36,8 @@ body {
    gap: 25px;
 }
 
-.about-title {
+.about-title,
+.projects-title {
    font-size: 75px;
 }
 
@@ -53,4 +57,94 @@ body {
 .hero-container img {
    width: 75px;
    cursor: pointer;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
+   margin: 140px 0 140px 0;
+}
+
+.projects-container {
+   display: grid;
+   max-width: 750px;
+   grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+   gap: 100px;
+}
+
+.project-01,
+.project-02,
+.project-03,
+.project-04,
+.project-05,
+.project-06 {
+box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+-webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+}
+
+.background-text {
+   text-align: center;
+   overflow-wrap: break-word;
+   font-size: 100px;
+   padding: 160px;
+   background-color: blueviolet;
+}
+
+.project-02 .background-text {
+   background-color: aquamarine;
+}
+
+.project-03 .background-text {
+   background-color: brown;
+}
+
+.project-04 .background-text {
+   background-color: burlywood;
+}
+
+.project-05 .background-text {
+   background-color: darkgreen;
+}
+
+.project-06 .background-text {
+   background-color: goldenrod;
+}
+
+.project-info {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   padding: 0 25px 140px 25px;
+}
+
+.upper-part {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 25px 0 25px 0;
+}
+
+.project-name {
+   font-size: 60px;
+   padding-left: 50px;
+}
+
+.project-icons {
+   display: flex;
+   gap: 25px;
+   cursor: pointer;
+}
+
+.project-icons img {
+   width: 50px;
+}
+
+.project-description {
+   font-size: 45px;
+   padding: 0 25px 0 25px;
+   color: rgba(56, 56, 56, .9);
 }
