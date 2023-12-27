@@ -1,90 +1,82 @@
 @import url(../src/reset.css);
 
 header,
-main,
-footer {
+main {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   padding: 0 50px 0 50px;
+   margin: 0 20px 0 20px;
 }
 
-.left-hero {
-   margin: 35px 0 35px 0;
+.left-header {
+   position: relative;
+   margin: 40px 0 80px 0;
    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+   width: 100%;
 }
 
-.left-hero,
-.right-hero,
+.left-header,
+.right-header,
+.projects-container,
 .left-footer,
 .right-footer {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   box-sizing: border-box;
-   max-width: 750px;
 }
 
 .picture-name {
    position: absolute;
-   top: 800px;
-   padding: 0 0 0 25px;
-   max-width: 750px;
-   font-size: 170px;
+   bottom: 0;
+   left: 0;
+   padding: 0 0 .3em .3em;
+   font-size: 3em;
    color: black;
 }
 
-.right-hero {
-   align-items: center;
-   margin-top: 140px;
-   gap: 25px;
-}
-
-.about-title,
-.projects-title,
+.header-title,
+.main-title,
 .footer-title {
-   font-size: 75px;
+   font-size: 3em;
+   align-self: center;
+   margin: 25px 0 25px 0;
 }
 
-.right-hero p {
-   font-size: 35px;
+.right-header p {
+   font-size: 1em;
    text-align: justify;
    color: rgba(56, 56, 56, .9);
 }
 
-.hero-container {
+.header-icons {
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-top: 25px;
    gap: 25px;
 }
 
-.hero-container img {
-   width: 75px;
+.header-icons img {
+   width: 50px;
    cursor: pointer;
 }
 
 main {
-   gap: 25px;
-   margin: 140px 0 140px 0;
+   margin-top: 80px;
+   margin-bottom: 80px;
+   align-items: stretch;
 }
 
 .projects-container {
    display: grid;
-   max-width: 750px;
    grid-template: repeat(6, 1fr) / repeat(1, 1fr);
-   gap: 100px;
+   row-gap: 50px;
 }
 
-.project-01,
-.project-02,
-.project-03,
-.project-04,
-.project-05,
-.project-06 {
+.project {
 box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
 -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
 -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
@@ -92,29 +84,29 @@ box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
 
 .background-text {
    text-align: center;
-   overflow-wrap: break-word;
-   font-size: 100px;
-   padding: 160px;
+   white-space: pre-wrap;
+   font-size: 3em;
+   padding: 30% 10% 30% 10%;
    background-color: blueviolet;
 }
 
-.project-02 .background-text {
+#project-02 .background-text {
    background-color: aquamarine;
 }
 
-.project-03 .background-text {
+#project-03 .background-text {
    background-color: brown;
 }
 
-.project-04 .background-text {
+#project-04 .background-text {
    background-color: burlywood;
 }
 
-.project-05 .background-text {
+#project-05 .background-text {
    background-color: darkgreen;
 }
 
-.project-06 .background-text {
+#project-06 .background-text {
    background-color: goldenrod;
 }
 
@@ -122,7 +114,7 @@ box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
    display: flex;
    flex-direction: column;
    gap: 25px;
-   padding: 0 25px 140px 25px;
+   padding: 0 25px 100px 25px;
 }
 
 .upper-part {
@@ -133,133 +125,192 @@ box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
 }
 
 .project-name {
-   font-size: 60px;
-   padding-left: 50px;
+   font-size: 1.5em;
 }
 
 .project-icons {
    display: flex;
-   gap: 25px;
-   cursor: pointer;
+   gap: 15px;
 }
 
 .project-icons img,
 .phone-information img,
 .email-information img{
-   width: 50px;
+   width: 25px;
+   cursor: pointer;
 }
 
 .project-description,
 .footer-information {
-   font-size: 45px;
-   padding: 0 25px 0 25px;
+   font-size: 1em;
+   text-align: justify;
    color: rgba(56, 56, 56, .9);
 }
 
-.left-footer {
-   align-items: center;
-   gap: 50px;
+footer {
    background-color: rgb(6, 153, 153);
+}
+
+.left-footer {
+   gap: 20px;
    padding: 25px 50px 25px 50px;
 }
 
 .footer-title,
-.footer-information,
-.footer-adress,
-.phone-number,
-.email {
+.footer-icons {
+   align-self: center;
+   justify-self: center;
+}
+
+.footer-information {
+   color: black;
    padding: 0;
-   color: white;
 }
 
 .footer-adress {
-   font-size: 37px;
+   font-size: 1em;
 }
 
 .phone-information,
 .email-information {
    display: flex;
-   justify-content: center;
    align-items: center;
    gap: 15px;
-   font-size: 28px;
+   font-size: 1em;
 }
 
 .footer-icons {
    display: flex;
-   gap: 50px;
-   cursor: pointer;
+   gap: 25px;
+   margin: 25px 0 25px 0;
 }
 
 .footer-icons img {
-   width: 100px;
+   width: 50px;
+   cursor: pointer;
 }
 
-@media (min-width: 1025px) {
-  
-   .hero {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-   }
+.right-footer {
+   max-width: 750px;
+}
 
-   .left-hero {
-      max-width: 475px;
-   }
-
+@media (min-width: 420px) {
    .picture-name {
-      top: 540px;
-      max-width: 300px;
-      font-size: 100px;
+      font-size: 4em;
    }
 
-   .right-hero {
-      align-items: flex-start;
-      text-align: left;
-      max-width: 1150px;
-      padding: 25px 50px 25px 50px;
-      margin: 100px 0 100px 0;
-      box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
-      -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
-      -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+   .header-title,
+   .main-title,
+   .footer-title {
+      font-size: 4em;
+      margin: 50px 0 50px 0;
    }
 
-   .hero-container {
-      align-self: flex-end;
+   .right-header p {
+      font-size: 1.5em;
    }
 
-   main {
-      align-items: flex-start;
+   .header-icons {
+      margin-top: 50px;
    }
 
-   .projects-container {
-      grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-      row-gap: 75px;
-      column-gap: 50px;
+   .header-icons img {
+      width: 60px;
    }
 
    .background-text {
-      font-size: 60px;
-      padding: 120px;
-   }
-
-   .project-info {
-      padding: 0 50px 100px 50px;
+      font-size: 4em;
    }
 
    .project-name {
-      font-size: 40px;
-      padding: 0;
+      font-size: 1.8em;
    }
 
-   .project-icons img {
-      width: 40px;
+   .project-info {
+      padding: 0 25px 150px 25px;
    }
 
-   .project-description {
-      font-size: 25px;
-      padding: 0;
+   .project-icons img,
+   .phone-information img,
+   .email-information img {
+      width: 30px
+   }
+
+   .project-info,
+   .footer-information {
+      font-size: 1.5em;
+   }
+
+   .left-footer {
+      padding: 50px 50px 50px 50px;
+   }
+
+
+   .footer-adress,
+   .phone-information,
+   .email-information {
+      font-size: 1.2em;
+   }
+
+   .footer-icons img {
+      width: 60px;
+   }
+}
+
+@media (min-width: 520px) {
+   .picture-name {
+      font-size: 5em;
+   }
+
+   .header-title,
+   .main-title,
+   .footer-title {
+      font-size: 5em;
+      margin: 50px 0 50px 0;
+   }
+
+   .right-header p {
+      font-size: 2em;
+   }
+
+   .header-icons img {
+      width: 70px;
+   }
+
+   .background-text {
+      font-size: 5em;
+   }
+
+   .project-name {
+      font-size: 2em;
+   }
+
+   .project-info {
+      padding: 0 25px 200px 25px;
+   }
+
+   .project-icons img,
+   .phone-information img,
+   .email-information img {
+      width: 35px
+   }
+
+   .project-info,
+   .footer-information {
+      font-size: 1.75em;
+   }
+
+   .left-footer {
+      padding: 75px 50px 75px 50px;
+   }
+
+   .footer-adress,
+   .phone-information,
+   .email-information {
+      font-size: 1.5em;
+   }
+
+   .footer-icons img {
+      width: 70px;
    }
 }
