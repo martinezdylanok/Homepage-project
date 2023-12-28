@@ -314,3 +314,60 @@ footer {
       width: 70px;
    }
 }
+
+/* Major breakpoint from phone screen to tablet screen */
+@media (min-width: 601px) {
+   header {
+      margin: 40px 20px 0 20px;
+      position: relative;
+   }
+
+   .left-header {
+      flex-direction: row;
+      margin: 0;
+      justify-content: flex-start;
+   }
+
+   .picture {
+      max-width: 275px;
+   }
+
+   .picture-name {
+      top: 0;
+      left: 274px;
+      font-size: 4em;
+      padding: 0px;
+      margin-left: 20px;
+   }
+
+   .right-header {
+      position: absolute;
+      top: 136px;
+      left: 274px;
+      max-width: 250px;
+      gap: 10px;
+      margin: 20px;
+   }
+
+   .header-title {
+      font-size: 1.5em;
+      align-self: flex-start;
+      margin: 0;
+   }
+
+   .right-header p {
+      font-size: .75em;
+      text-align: left;
+   }
+
+   .header-icons {
+      margin: 0;
+      gap: 20px;
+      align-self: flex-end;
+   }
+
+   .header-icons img {
+      width: 25px;
+   }
+
+}
