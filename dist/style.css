@@ -370,4 +370,44 @@ footer {
       width: 25px;
    }
 
+   main {
+      margin: 25px 20px 200px 20px;
+   }
+
+   .main-title {
+      font-size: 3.5em;
+      margin: 25px 0 25px 0;
+      align-self: flex-start;
+   }
+
+   .projects-container {
+      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+      gap: 25px;
+   }
+
+   .background-text {
+      font-size: 2em;
+   }
+
+   .project-info {
+      gap: 10px;
+      padding: 0 20px 50px 20px;
+   }
+
+   .upper-part {
+      margin: 10px 0 10px 0;
+   }
+
+   .project-name {
+      font-size: 1em;
+   }
+
+   .project-icons img {
+      width: 25px;
+   }
+
+   .project-description {
+      font-size: .64em;
+   }
+
 }
