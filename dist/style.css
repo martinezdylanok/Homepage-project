@@ -335,7 +335,7 @@ footer {
    .picture-name {
       top: 0;
       left: 274px;
-      font-size: 4em;
+      font-size: 3.5em;
       padding: 0px;
       margin-left: 20px;
    }
@@ -408,6 +408,51 @@ footer {
 
    .project-description {
       font-size: .64em;
+   }
+
+   footer {
+      display: flex;
+      background-color: rgb(6, 153, 153);
+   }
+
+   .left-footer {
+      padding: 100px 20px 50px 20px;
+   }
+
+   .footer-title {
+      font-size: 3.5em;
+      align-self: flex-start;
+      margin: 0;
+   }
+
+   .footer-information,
+   .footer-adress,
+   .phone-information,
+   .email-information {
+      font-size: 1em;
+   }
+
+   .phone-information img,
+   .email-information img {
+      width: 30px;
+   }
+
+   .footer-icons {
+      align-self: flex-start;
+      margin: 0;
+   }
+
+   .footer-icons img {
+      width: 50px;
+   }
+
+   .right-footer {
+      justify-content: stretch;
+   }
+
+   .right-footer img {
+      max-height: 400px;
+      padding: 50px 25px 0 0;
    }
 
 }
