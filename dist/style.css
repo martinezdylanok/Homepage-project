@@ -474,3 +474,9 @@ footer {
    }
    
 }
+
+@media (min-width: 850px) {
+   .background-text {
+      font-size: 2.5em;
+   }
+}
