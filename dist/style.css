@@ -6,16 +6,15 @@ main {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 0 20px 0 20px;
+   margin: 0 1.25em 0 1.25em;
 }
 
 .left-header {
    position: relative;
-   margin: 40px 0 80px 0;
+   margin: 2.5em 0 5em 0;
    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
-   width: 100%;
 }
 
 .left-header,
@@ -27,11 +26,15 @@ main {
    justify-content: center;
 }
 
+.picture {
+   max-width: 17.5rem;
+}
+
 .picture-name {
    position: absolute;
-   bottom: 0;
-   left: 0;
-   padding: 0 0 .3em .3em;
+   bottom: 0rem;
+   left: 0rem;
+   padding: 0 0 .9375em .3125em;
    font-size: 3em;
    color: black;
 }
@@ -41,7 +44,7 @@ main {
 .footer-title {
    font-size: 3em;
    align-self: center;
-   margin: 25px 0 25px 0;
+   margin: .52084em 0 .52084em 0;
 }
 
 .right-header p {
@@ -54,25 +57,25 @@ main {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 25px;
-   gap: 25px;
+   margin-top: 1.5625em;
+   gap: 1.562em;
 }
 
 .header-icons img {
-   width: 50px;
+   max-width: 3.125rem;
    cursor: pointer;
 }
 
 main {
-   margin-top: 80px;
-   margin-bottom: 80px;
+   margin-top: 5em;
+   margin-bottom: 5em;
    align-items: stretch;
 }
 
 .projects-container {
    display: grid;
    grid-template: repeat(6, 1fr) / repeat(1, 1fr);
-   row-gap: 50px;
+   row-gap: 3.125em;
 }
 
 .project {
@@ -83,9 +86,8 @@ box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
 
 .background-text {
    text-align: center;
-   white-space: pre-wrap;
    font-size: 3em;
-   padding: 30% 10% 30% 10%;
+   padding: 1.66667em .52083em 1.66667em .52083em;
    background-color: blueviolet;
 }
 
@@ -112,15 +114,15 @@ box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
 .project-info {
    display: flex;
    flex-direction: column;
-   gap: 25px;
-   padding: 0 25px 100px 25px;
+   gap: 1.5625em;
+   padding: 0 1.5625em 6.25em 1.5625em;
 }
 
 .upper-part {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin: 25px 0 25px 0;
+   margin: 1.5625em 0 1.5625em 0;
 }
 
 .project-name {
@@ -129,13 +131,13 @@ box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
 
 .project-icons {
    display: flex;
-   gap: 15px;
+   gap: 0.9375em;
 }
 
 .project-icons img,
 .phone-information img,
 .email-information img{
-   width: 25px;
+   max-width: 1.563rem;
    cursor: pointer;
 }
 
@@ -152,18 +154,17 @@ footer {
 
 .left-footer {
    gap: 1rem;
-   padding: 25px 50px 25px 50px;
+   padding: 1.5625em 3.125em 1.5625em 3.125em;
 }
 
 .footer-title,
 .footer-icons {
    align-self: center;
-   justify-self: center;
 }
 
 .footer-information {
    color: black;
-   padding: 0;
+   padding: 0rem;
 }
 
 .footer-adress {
@@ -174,18 +175,19 @@ footer {
 .email-information {
    display: flex;
    align-items: center;
-   gap: 15px;
+   gap: 0.938rem;
    font-size: 1em;
 }
 
 .footer-icons {
    display: flex;
-   gap: 25px;
-   margin: 25px 0 25px 0;
+   gap: 1.563rem;
+   justify-content: space-evenly;
+   margin: 1.5625em 0 1.5625em 0;
 }
 
 .footer-icons img {
-   width: 50px;
+   max-width: 3.125rem;
    cursor: pointer;
 }
 
