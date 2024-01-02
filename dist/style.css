@@ -210,7 +210,7 @@ footer {
    .main-title,
    .footer-title {
       font-size: 4.3em;
-      margin: .625em 0 .625em 0;
+      margin: .72674em 0 .72674em 0;
    }
 
    .right-header p,
@@ -228,6 +228,11 @@ footer {
       width: 3.75rem;
    }
 
+   main {
+      margin-top: 10em;
+      margin-bottom: 10em;
+   }
+
    .background-text {
       font-size: 4em;
    }
@@ -237,7 +242,7 @@ footer {
    }
 
    .project-info {
-      padding: 0 1.04165em 6.25em 1.04165em;
+      padding: 0 1.10037em 6.6021em 1.10037em;
    }
 
    .project-icons img,
@@ -259,23 +264,37 @@ footer {
 }
 
 @media (min-width: 520px) {
+   .picture {
+      max-width: 30rem;
+   }
+
    .picture-name {
-      font-size: 5em;
+      font-size: 6.5em;
    }
 
    .header-title,
    .main-title,
    .footer-title {
       font-size: 5em;
-      margin: 50px 0 50px 0;
+      margin: 1.09649em 0 1.09649em 0;
    }
 
    .right-header p {
       font-size: 2em;
    }
 
-   .header-icons img {
-      width: 70px;
+   .header-icons {
+      margin-top: 4.6875em;
+   }
+
+   .header-icons img,
+   .footer-icons img {
+      width: 4.375rem;
+   }
+
+   main {
+      margin-top: 15em;
+      margin-bottom: 15em;
    }
 
    .background-text {
@@ -283,26 +302,26 @@ footer {
    }
 
    .project-name {
-      font-size: 2em;
+      font-size: 1.7em;
    }
 
    .project-info {
-      padding: 0 25px 200px 25px;
+      padding: 0 1.04165em 6.25em 1.04165em;
    }
 
    .project-icons img,
    .phone-information img,
    .email-information img {
-      width: 35px
+      width: 2.188rem;
    }
 
    .project-info,
    .footer-information {
-      font-size: 1.75em;
+      font-size: 1.6em;
    }
 
    .left-footer {
-      padding: 75px 50px 75px 50px;
+      padding: 4.6875em;
    }
 
    .footer-adress,
@@ -311,9 +330,6 @@ footer {
       font-size: 1.5em;
    }
 
-   .footer-icons img {
-      width: 70px;
-   }
 }
 
 /* Major breakpoint from phone screen to tablet screen */
