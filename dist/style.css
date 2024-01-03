@@ -476,9 +476,116 @@ footer {
    }
 
    .right-footer img {
-      object-fit: contain;
       max-width: 100%;
       padding: 6.25em 2.5em 3.125em 0;
    }
+
+}
+
+@media (min-width: 650px) {
+   .picture-name {
+      font-size: 3.7em;
+   }
+
+   .right-header {
+      padding: 0 35.625em 22.6em 0;
+   }
+
+   .header-title {
+      font-size: 2.3em;
+   }
+
+   .right-header-content p {
+      font-size: .8484em;
+   }
+}
+
+@media (min-width: 700px) {
+   .right-header {
+      padding: 0 38.75em 22.6em 0;
+   }
+
+   .project-info {
+      padding: 0 .78124em 3.125em .78124em;
+   }
+
+   .footer-information,
+   .phone-information,
+   .email-information {
+      font-size: 1.2em;
+   }
+
+}
+
+@media (min-width: 750px) {
+   .right-header {
+      padding: 0 41.875em 22.6em 0;
+   }
+
+   .header-title {
+      font-size: 2.5em;
+   }
+
+   .right-header-content p {
+      font-size: 1em;
+   };
+
+   .footer-information,
+   .phone-information,
+   .email-information {
+      font-size: 1.4em;
+   }
+}
+
+@media (min-width: 800px) {
+   .right-header {
+      padding: 0 45em 22.6em 0;
+   }
+}
+
+@media (min-width: 850px) {
+   .right-header {
+      padding: 0 48.125em 22.6em 0;
+   }
+
+   .header-title {
+      font-size: 3em;
+   }
+
+   .right-header-content p {
+      font-size: 1.12em;
+   };
+
+   .footer-information,
+   .phone-information,
+   .email-information {
+      font-size: 1.5em;
+   }
+}
+
+@media (min-width: 900px) {
+   .right-header {
+      padding: 0 51.25em 22.6em 0;
+   }
+}
+
+@media (min-width: 950px) {
+   .right-header {
+      padding: 0 54.375em 22.6em 0;
+   }
+
+   .right-header-content p {
+      font-size: 1.24em;
+   };
+
+   .footer-information,
+   .phone-information,
+   .email-information {
+      font-size: 1.6em;
+   }
+}
+
+/* Mayor breakpoint from Tablet to Desktop*/
+@media (min-width: 993px) {
 
 }
