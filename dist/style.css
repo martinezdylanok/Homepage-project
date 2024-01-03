@@ -18,7 +18,7 @@ main {
 }
 
 .left-header,
-.right-header,
+.right-header-content,
 .projects-container,
 .left-footer{
    display: flex;
@@ -47,7 +47,7 @@ main {
    margin: .52084em 0 .52084em 0;
 }
 
-.right-header p {
+.right-header-content p {
    font-size: 1em;
    text-align: justify;
    color: rgba(56, 56, 56, .9);
@@ -213,7 +213,7 @@ footer {
       margin: .72674em 0 .72674em 0;
    }
 
-   .right-header p,
+   .right-header-content p,
    .project-info,
    .footer-information {
       font-size: 1.42em;
@@ -279,7 +279,7 @@ footer {
       margin: 1.09649em 0 1.09649em 0;
    }
 
-   .right-header p {
+   .right-header-content p {
       font-size: 2em;
    }
 
@@ -335,91 +335,102 @@ footer {
 /* Major breakpoint from phone screen to tablet screen */
 @media (min-width: 601px) {
    header {
-      margin: 40px 20px 0 20px;
+      align-items: flex-start;
       position: relative;
+      margin: 2.5em 2.5em 0 2.5em;
    }
 
    .left-header {
-      flex-direction: row;
       margin: 0;
-      justify-content: flex-start;
    }
 
    .picture {
-      max-width: 275px;
+      max-width: 17.188rem;
    }
 
    .picture-name {
       top: 0;
-      left: 274px;
+      left: 17.1rem;
       font-size: 3.5em;
-      padding: 0px;
-      margin-left: 20px;
+      z-index: -1;
    }
 
    .right-header {
       position: absolute;
-      top: 136px;
-      left: 274px;
+      z-index: -1;
+      top: 8.2rem;
+      padding: 0 32.5625em 22.6em 0;
+      box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+      -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+      -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.49);
+   }
+
+   .right-header-content {
+      position: absolute;
+      left: 18.2rem;
       gap: 1rem;
-      margin: 20px;
+      padding-top: 1.2em;
+      padding-right: 1.25em;
    }
 
    .header-title {
-      font-size: 1.5em;
-      align-self: flex-start;
+      font-size: 2em;
       margin: 0;
    }
 
    .right-header p {
-      font-size: .75em;
+      font-size: .784em;
       text-align: left;
    }
 
    .header-icons {
       margin: 0;
-      gap: 20px;
       align-self: flex-end;
    }
 
    .header-icons img {
-      width: 25px;
+      width: 1.563rem;
    }
 
    main {
-      margin: 25px 20px 200px 20px;
+      margin: 7.5em 2.5em 10em 2.5em;
    }
 
    .main-title {
-      font-size: 3.5em;
-      margin: 25px 0 25px 0;
+      font-size: 3em;
+      margin: .44643em 0 .44643em 0;
       align-self: flex-start;
    }
 
    .projects-container {
       grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-      gap: 1.5rem;
+      row-gap: 3em;
+      column-gap: 1.5em;
    }
 
    .background-text {
-      font-size: 2em;
+      font-size: 2.5em;
    }
 
    .project-info {
-      gap: 10px;
-      padding: 0 20px 50px 20px;
+      gap: .75em;
+      padding: 0 .78124em 2.34376em .78124em;
    }
 
    .upper-part {
-      margin: 10px 0 10px 0;
+      margin: .39064em 0 .39064em 0;
    }
 
    .project-name {
       font-size: 1em;
    }
 
+   .project-icons {
+      gap: 0.4em;
+   }
+
    .project-icons img {
-      width: 25px;
+      width: 1.25rem;
    }
 
    .project-description {
@@ -428,13 +439,13 @@ footer {
 
    footer {
       display: flex;
-      gap: 8rem;
+      gap: 2.5rem;
       background-color: rgb(6, 153, 153);
    }
 
    .left-footer {
-      padding: 100px 0 50px 20px;
-      gap: 2.5rem;
+      justify-content: space-between;
+      padding: 6.25em 0 3.125em 2.5em;
    }
 
    .footer-title {
@@ -452,7 +463,7 @@ footer {
 
    .phone-information img,
    .email-information img {
-      width: 30px;
+      width: 1.875rem;
    }
 
    .footer-icons {
@@ -461,39 +472,13 @@ footer {
    }
 
    .footer-icons img {
-      width: 50px;
+      width: 3.125rem;
    }
 
    .right-footer img {
       object-fit: contain;
       max-width: 100%;
-      max-height: 100%;
-      padding: 100px 20px 50px 0;
+      padding: 6.25em 2.5em 3.125em 0;
    }
 
-}
-
-@media (min-width: 750px) {
-   .footer-information,
-   .footer-adress,
-   .phone-information,
-   .email-information {
-      font-size: 1.2em;
-   }
-
-   .phone-information img,
-   .email-information img {
-      width: 40px;
-   }
-
-   .footer-icons img {
-      width: 60px;
-   }
-   
-}
-
-@media (min-width: 850px) {
-   .background-text {
-      font-size: 2.5em;
-   }
 }
