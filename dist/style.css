@@ -587,5 +587,88 @@ footer {
 
 /* Mayor breakpoint from Tablet to Desktop*/
 @media (min-width: 993px) {
+   .picture {
+      max-width: 19rem;
+   }
 
+   .picture-name {
+      top: 20rem;
+      left: 0;
+      font-size: 4em;
+      z-index: auto;
+   }
+
+   .right-header {
+      top: 2.5rem;
+      padding: 0 57.06247em 23.5em 0;
+   }
+
+   .right-header-content {
+      left: 18.9rem;
+      padding: 1.25em;
+   }
+
+   .header-title {
+      align-self: flex-start;
+   }
+
+   .right-header-content p {
+      font-size: 1.272em;
+   }
+
+   .header-icons img {
+      width: 2.5rem;
+   }
+
+   .header-title,
+   .main-title,
+   .footer-title {
+      font-size: 3.5em;
+   }
+
+   main {
+      margin: 7.5em 2.5em 7.5em 2.5em;
+   }
+
+
+   .projects-container {
+      grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+   }
+
+   .background-text {
+      font-size: 3em;
+   }
+
+   .project-name {
+      font-size: 1.2em;
+   }
+
+   .project-icons img {
+      width: 1.563rem;
+   }
+
+   .project-description {
+      font-size: .75em;
+   }
+
+   footer {
+      gap: 0;
+      justify-content: space-between;
+   }
+
+   .footer-information,
+   .footer-adress,
+   .phone-information,
+   .email-information {
+      font-size: 1.8em;
+   }
+
+   .phone-information img,
+   .email-information img {
+      width: 2.188rem;
+   }
+
+   .right-footer img {
+      max-height: 30rem;
+   }
 }
